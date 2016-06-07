@@ -1,0 +1,61 @@
+!!! 5
+%html
+	%head
+		%link{href:"./apps.css", rel:"stylesheet"}
+		%link{href:"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css", rel:"stylesheet"}
+		%link{href:"https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700",rel:"stylesheet"}
+
+		%meta{charset:"utf-8"}
+		%title Taller - Landing Page Ejemplo preprocesamiento
+	%body
+		.workshop-background
+			.row.center-xs
+				.col-xs-10.col-sm-8.col-md-6
+					.box
+						%header.white-text.text-center
+							.inline-block
+								%img{src:"imgs/tl.png", height:"60"}
+								.init
+									Iniciamos en
+								.restant-time
+									%span
+										01
+										%span días
+									%span :
+									%span
+										38
+										%span horas
+									%span :
+									%span
+										20
+										%span minutos
+								%h1.slim Crea Un landig Page con HTML y CSS
+								.top-space
+									%a.btn.title.btn--yellow.black-text Tomar taller
+
+		.row.center-xs
+			.col-xs-12.col-sm-8
+				.box
+					.card.z-depth.move-up.padding-50
+						.container-80.center-block.black-text
+							.row.separator
+								.col-xs-12.col-sm-6
+									.box.text-left
+										%p.bold ¿Qué voy a aprender?
+										%ul.bullet-points
+											%li Mejores prácticas Frontend
+											%li Cómo pasar imágenes a web
+											%li Consejos para maquetar
+											%li Consejos para CSS mantenible
+											%li Escribir código limpio
+											%li Responsive para landing
+								.col-xs-12.col-sm.text-right
+									.box
+										%p.bold ¿Cómo funcionan los talleres live?
+										%p
+											Una vez que estés suscrito, deberás ingresar a tu cuenta de CódigoFacilito a la hora indicada en esta página y podrás ver al profesor programar un proyecto completo en vivo durante 2 horas y después una sesion de Q&A de 1 hora. El Taller Live quedará grabado para suscriptores premium
+						.video-container
+							%iframe{id:"player", frameborder:"0", allowfullscreen:"1", title:"YouTube video player", width:"700", height:"400", src:"https://www.youtube.com/embed/uZ6trZUTlNU?enablejsapi=1&amp;origin=http%3A%2F%2Fcodigofacilito.com"}
+
+
+
